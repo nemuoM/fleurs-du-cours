@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fleurs du Cours — Fleuriste Aix-en-Provence</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+  :root{--sauge:#7A9E7E;--rose-pale:#F5E6E8;--blanc:#FDFCF8;--vert-fonce:#2D4739;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Lato',sans-serif;background:var(--blanc);color:var(--vert-fonce);line-height:1.7;}
+  header{background:var(--sauge);padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;}
+  .logo{font-family:'Libre Baskerville',serif;color:var(--blanc);font-size:1.4rem;font-style:italic;}
+  nav a{color:var(--blanc);text-decoration:none;margin-left:1.5rem;font-weight:400;font-size:.9rem;}
+  .hero{background:linear-gradient(rgba(45,71,57,.25),rgba(45,71,57,.35)),url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22><path fill=%22%23F5E6E8%22 fill-opacity=%22.3%22 d=%22M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z%22></path></svg>');background-size:cover;background-position:center;color:var(--blanc);padding:6rem 2rem;text-align:center;}
+  .hero h1{font-family:'Libre Baskerville',serif;font-size:3rem;margin-bottom:1rem;text-shadow:0 2px 10px rgba(0,0,0,.2);}
+  .hero p{font-size:1.1rem;max-width:600px;margin:0 auto 2rem;}
+  .btn{background:var(--blanc);color:var(--vert-fonce);padding:.8rem 2rem;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block;transition:all .3s;}
+  .btn:hover{background:var(--rose-pale);}
+  section{padding:4rem 2rem;max-width:1100px;margin:0 auto;}
+  .section-title{font-family:'Libre Baskerville',serif;font-size:2rem;text-align:center;margin-bottom:2.5rem;color:var(--vert-fonce);}
+  .creations{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;}
+  .creation{background:var(--blanc);border-radius:16px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.05);border:1px solid #eee;transition:transform .3s;}
+  .creation:hover{transform:translateY(-4px);}
+  .creation-img{height:180px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:3rem;}
+  .creation-content{padding:1.5rem;}
+  .creation-content h3{font-family:'Libre Baskerville',serif;margin-bottom:.5rem;color:var(--vert-fonce);}
+  .occasions{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:2rem;}
+  .occasion{background:var(--sauge);color:var(--blanc);padding:.6rem 1.2rem;border-radius:20px;font-size:.9rem;}
+  .livraison{background:var(--rose-pale);padding:2.5rem;border-radius:16px;text-align:center;margin-top:3rem;}
+  .livraison h3{font-family:'Libre Baskerville',serif;margin-bottom:1rem;font-size:1.4rem;}
+  footer{background:var(--vert-fonce);color:var(--blanc);text-align:center;padding:2.5rem 2rem;font-size:.9rem;}
+  @media(max-width:768px){.hero h1{font-size:2.2rem;}nav a{margin-left:1rem;font-size:.8rem;}}
+</style>
+</head>
+<body>
+<header><div class="logo">Fleurs du Cours</div><nav><a href="#creations">Créations</a><a href="#occasions">Occasions</a><a href="#contact">Contact</a></nav></header>
+<section class="hero">
+  <h1>Des fleurs qui racontent</h1>
+  <p>Bouquets sur mesure, compositions éphémères et plantes vertes choisies avec soin. Au cœur du Cours Mirabeau depuis 2012.</p>
+  <a href="tel:0442123456" class="btn">Commander un bouquet</a>
+</section>
+<section id="creations">
+  <h2 class="section-title">Nos créations</h2>
+  <div class="creations">
+    <div class="creation"><div class="creation-img">💐</div><div class="creation-content"><h3>Bouquet Saisonnier</h3><p>Fleurs du marché d'Aix, choisies le matin même. Tons pastels ou vitaminés selon l'humeur du jour.</p></div></div>
+    <div class="creation"><div class="creation-img">🌹</div><div class="creation-content"><h3>Rose Éternelle</h3><p>Roses stabilisées sous cloche de verre. Un message d'amour qui dure des années.</p></div></div>
+    <div class="creation"><div class="creation-img">🌿</div><div class="creation-content"><h3>Plante d'intérieur</h3><p>Monstera, Ficus, Calathea... conseil d'entretien et pot en céramique inclus.</p></div></div>
+    <div class="creation"><div class="creation-img">💍</div><div class="creation-content"><h3>Boutonnière & Corsage</h3><p>Mariages et cérémonies. Fleurs fraîches ou séchées, style champêtre ou élégant.</p></div></div>
+  </div>
+</section>
+<section id="occasions">
+  <h2 class="section-title">Pour chaque occasion</h2>
+  <div class="occasions">
+    <span class="occasion">🎉 Anniversaire</span>
+    <span class="occasion">👨‍❤️‍👨 Saint-Valentin</span>
+    <span class="occasion">👩‍❤️‍💋‍👩 Fête des mères</span>
+    <span class="occasion">⛪ Mariage</span>
+    <span class="occasion">⚰️ Deuil</span>
+    <span class="occasion">🏠 Déménagement</span>
+  </div>
+</section>
+<section id="contact">
+  <div class="livraison">
+    <h3>Livraison sur Aix &amp; les alentours</h3>
+    <p>Commandez avant 14h pour une livraison le jour même à Aix-en-Provence, Puyricard, Les Milles et Montperrin.</p>
+  </div>
+</section>
+<section style="text-align:center;">
+  <p style="margin-bottom:.5rem;"><strong>Fleurs du Cours</strong></p>
+  <p>21 Cours Mirabeau — 13100 Aix-en-Provence</p>
+  <p style="margin-top:1rem;">📞 04 42 12 34 56 · ✉️ fleursducours@gmail.com</p>
+  <p style="margin-top:.5rem;font-size:.85rem;color:#777;">Lun–Sam : 9h – 19h30 · Dim : 9h – 13h</p>
+</section>
+<footer>© Fleurs du Cours — Fleuriste artisanale — Aix-en-Provence</footer>
+</body>
+</html>
