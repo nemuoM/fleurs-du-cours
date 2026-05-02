@@ -3,83 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fleurs du Cours | Fleuriste Aix-en-Provence — Cours Mirabeau</title>
-<meta name="description" content="Fleuriste artisanale à Aix-en-Provence sur le Cours Mirabeau. Bouquets sur mesure, roses éternelles, plantes vertes. Livraison Aix et alentours. 21 Cours Mirabeau.">
+<title>Fleurs du Cours | Fleuriste Aix-en-Provence - Cours Mirabeau</title>
+<meta name="description" content="Fleuriste artisanale a Aix-en-Provence sur le Cours Mirabeau. Bouquets sur mesure, roses eternelles, plantes vertes. Livraison Aix et alentours. 21 Cours Mirabeau.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--sauge:#6B8E6E;--sauge-clair:#8FB396;--rose-pale:#F2E2E5;--blanc:#FDFCFA;--lin:#F0EBE3;--text:#3A3A3A;}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--blanc);color:var(--text);line-height:1.75;font-size:16px}
-img{max-width:100%;display:block;height:auto}
-
-/* Organic shapes / soft background */
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:
-  radial-gradient(ellipse 60% 40% at 10% 20%,rgba(111,142,110,.06),transparent),
-  radial-gradient(ellipse 50% 50% at 90% 80%,rgba(242,226,229,.4),transparent)}
-
-/* Nav */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,252,250,.92);backdrop-filter:blur(12px);padding:0 5vw;display:flex;justify-content:space-between;align-items:center;height:72px}
-.nav-logo{font-family:'Crimson Pro',serif;font-size:1.5rem;font-weight:300;font-style:italic;color:var(--sauge)}
-.nav-links{display:flex;gap:2.5rem}
-.nav-links a{color:var(--text);text-decoration:none;font-size:.85rem;font-weight:500;position:relative;padding:.25rem 0}
-.nav-links a::after{content:"";position:absolute;bottom:-2px;left:50%;width:0;height:1.5px;background:var(--sauge);transition:all .3s ease;transform:translateX(-50%)}
-.nav-links a:hover::after{width:100%}
-
-/* Hero */
-.hero{padding:12vh 5vw 8vh;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;min-height:90vh}
-.hero-content{position:relative;z-index:2}
-.hero-tag{font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--sauge);margin-bottom:1.5rem;font-weight:500}
-.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(2.8rem,5.5vw,4.5rem);font-weight:300;line-height:1.08;margin-bottom:1.5rem;color:var(--text)}
-.hero h1 em{font-style:italic;font-weight:400;color:var(--sauge)}
-.hero-desc{font-size:1.05rem;opacity:.7;max-width:420px;margin-bottom:2.5rem}
-.hero-cta{display:inline-flex;align-items:center;gap:.75rem;background:var(--sauge);color:var(--blanc);padding:1rem 2.5rem;border-radius:50px;font-weight:500;font-size:.9rem;text-decoration:none;transition:all .3s}
-.hero-cta:hover{background:var(--sauge-clair);transform:translateY(-2px)}
-.hero-visual{position:relative}
-.hero-visual::before{content:"";position:absolute;inset:-20px;background:linear-gradient(135deg,var(--rose-pale),var(--lin));border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;z-index:-1;opacity:.6}
-.hero-visual-inner{aspect-ratio:3/4;background:linear-gradient(180deg,var(--sauge-clair),var(--sauge));border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;display:flex;align-items:center;justify-content:center}
-
-/* Sections */
-.section{padding:6rem 5vw;max-width:1200px;margin:0 auto}
-.section-alt{background:var(--lin);border-radius:40px;margin:0 2vw}
-.section-tag{font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--sauge);margin-bottom:1rem;font-weight:500;display:block}
-.section-title{font-family:'Crimson Pro',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;margin-bottom:3rem;line-height:1.15}
-
-/* Creations */
-.creations{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}
-.creation{background:var(--blanc);border-radius:24px;padding:2.5rem;border:1px solid rgba(111,142,110,.12);transition:all .3s}
-.creation:hover{border-color:rgba(111,142,110,.3);box-shadow:0 8px 40px rgba(111,142,110,.08);transform:translateY(-4px)}
-.creation:nth-child(3){grid-column:span 2;background:linear-gradient(135deg,var(--sauge),var(--sauge-clair));color:var(--blanc);border:none}
-.creation-icon{width:52px;height:52px;background:var(--lin);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:1.3rem}
-.creation:nth-child(3) .creation-icon{background:rgba(255,255,255,.2)}
-.creation h3{font-family:'Crimson Pro',serif;font-size:1.4rem;font-weight:400;margin-bottom:.5rem}
-.creation p{font-size:.9rem;opacity:.7;line-height:1.6}
-.creation:nth-child(3) p{opacity:.9}
-
-/* Occasions */
-.occasions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
-.occasion{background:var(--blanc);border:1px solid rgba(111,142,110,.2);color:var(--sauge);padding:.6rem 1.4rem;border-radius:50px;font-size:.85rem;font-weight:500;transition:all .2s}
-.occasion:hover{background:var(--sauge);color:var(--blanc);border-color:var(--sauge)}
-
-/* Contact */
-.contact-section{text-align:center;max-width:600px}
-.contact-section p{margin-bottom:1rem;font-size:1.05rem}
-.contact-section a{color:var(--sauge);text-decoration:none;font-weight:500}
-.contact-section a:hover{text-decoration:underline}
-
-/* Footer */
-.footer{text-align:center;padding:3rem 5vw;background:var(--lin);margin-top:4rem}
-.footer p{font-size:.85rem;opacity:.5}
-.footer-brand{font-family:'Crimson Pro',serif;font-size:1.3rem;font-style:italic;color:var(--sauge);margin-bottom:.5rem}
-
-@media(max-width:768px){
-  .hero{grid-template-columns:1fr;gap:3rem}
-  .hero-visual{display:none}
-  .creations{grid-template-columns:1fr}
-  .creation:nth-child(3){grid-column:span 1}
-  .nav-links{gap:1.5rem}
-}
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  img{max-width:100%;height:auto;display:block}
+  a{color:inherit;text-decoration:none}
+  html{scroll-behavior:smooth}
+  :root{--sauge:#6B8E6E;--sauge-clair:#8FB396;--rose-pale:#F2E2E5;--blanc:#FDFCFA;--lin:#F0EBE3;--text:#3A3A3A;}
+  body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--blanc);color:var(--text);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,252,250,.92);backdrop-filter:blur(12px);padding:0 5vw;display:flex;justify-content:space-between;align-items:center;height:68px;border-bottom:1px solid rgba(111,142,110,.1)}
+  .nav-logo{font-family:'Crimson Pro',serif;font-size:1.3rem;font-weight:300;font-style:italic;color:var(--sauge)}
+  .nav-links{display:flex;gap:2rem}
+  .nav-links a{color:var(--text);font-size:.8rem;font-weight:500;position:relative;padding:.25rem 0}
+  .nav-links a::after{content:'';position:absolute;bottom:-2px;left:50%;width:0;height:1.5px;background:var(--sauge);transition:all .3s ease;transform:translateX(-50%)}
+  .nav-links a:hover::after{width:100%}
+  .hero{padding:10vh 5vw 6vh;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;min-height:85vh}
+  .hero-content{position:relative;z-index:2}
+  .hero-tag{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--sauge);margin-bottom:1rem;font-weight:500}
+  .hero h1{font-family:'Crimson Pro',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.08;margin-bottom:1.25rem;color:var(--text)}
+  .hero h1 em{font-style:italic;font-weight:400;color:var(--sauge)}
+  .hero-desc{font-size:1rem;opacity:.7;max-width:400px;margin-bottom:2rem}
+  .hero-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--sauge);color:var(--blanc);padding:.9rem 2rem;border-radius:50px;font-weight:500;font-size:.85rem;transition:all .3s;width:fit-content}
+  .hero-cta:hover{background:var(--sauge-clair);transform:translateY(-2px)}
+  .hero-visual{position:relative}
+  .hero-visual-bg{position:absolute;inset:-15px;background:linear-gradient(135deg,var(--rose-pale),var(--lin));border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;z-index:-1;opacity:.6}
+  .hero-visual-img{aspect-ratio:3/4;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;overflow:hidden}
+  .hero-visual-img img{width:100%;height:100%;object-fit:cover}
+  .section{padding:5rem 5vw;max-width:1200px;margin:0 auto}
+  .section-alt{background:var(--lin);border-radius:32px;margin:0 3vw}
+  .section-tag{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--sauge);margin-bottom:.75rem;font-weight:500;display:block}
+  .section-title{font-family:'Crimson Pro',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:300;margin-bottom:2.5rem;line-height:1.15}
+  .creations{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+  .creation{background:var(--blanc);border-radius:20px;padding:2rem;border:1px solid rgba(111,142,110,.12);transition:all .3s}
+  .creation:hover{border-color:rgba(111,142,110,.3);box-shadow:0 8px 30px rgba(111,142,110,.08);transform:translateY(-3px)}
+  .creation-wide{grid-column:span 2;background:linear-gradient(135deg,var(--sauge),var(--sauge-clair));color:var(--blanc);border:none}
+  .creation-wide:hover{box-shadow:0 8px 30px rgba(111,142,110,.2)}
+  .creation-icon{width:48px;height:48px;background:var(--lin);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;font-size:1.1rem}
+  .creation-wide .creation-icon{background:rgba(255,255,255,.2)}
+  .creation h3{font-family:'Crimson Pro',serif;font-size:1.2rem;font-weight:400;margin-bottom:.4rem}
+  .creation p{font-size:.85rem;opacity:.7;line-height:1.6}
+  .creation-wide p{opacity:.9}
+  .occasions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+  .occasion{background:var(--blanc);border:1px solid rgba(111,142,110,.2);color:var(--sauge);padding:.5rem 1.2rem;border-radius:50px;font-size:.8rem;font-weight:500;transition:all .2s;cursor:pointer}
+  .occasion:hover{background:var(--sauge);color:var(--blanc);border-color:var(--sauge)}
+  .contact-section{text-align:center;max-width:600px;margin:0 auto}
+  .contact-section p{margin-bottom:.75rem;font-size:1rem}
+  .contact-section a{color:var(--sauge);font-weight:500}
+  .contact-section a:hover{text-decoration:underline}
+  .contact-map{margin-top:2rem;border-radius:24px;overflow:hidden;height:240px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+  .contact-map iframe{width:100%;height:100%;border:0}
+  .footer{text-align:center;padding:2.5rem 5vw;background:var(--lin);margin-top:3rem}
+  .footer p{font-size:.8rem;opacity:.5}
+  .footer-brand{font-family:'Crimson Pro',serif;font-size:1.2rem;font-style:italic;color:var(--sauge);margin-bottom:.5rem}
+  @media(max-width:768px){
+    .hero{grid-template-columns:1fr;gap:2rem;min-height:auto}
+    .hero-visual{display:none}
+    .creations{grid-template-columns:1fr}
+    .creation-wide{grid-column:span 1}
+    .nav-links{gap:1.25rem}
+  }
 </style>
 </head>
 <body>
@@ -87,7 +72,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
 <nav class="nav" aria-label="Navigation principale">
   <div class="nav-logo">Fleurs du Cours</div>
   <div class="nav-links">
-    <a href="#creations">Créations</a>
+    <a href="#creations">Creations</a>
     <a href="#occasions">Occasions</a>
     <a href="#contact">Contact</a>
   </div>
@@ -95,40 +80,41 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
 
 <header class="hero" id="accueil">
   <div class="hero-content">
-    <span class="hero-tag">Fleuriste Artisanale — Aix-en-Provence</span>
+    <span class="hero-tag">Fleuriste Artisanale - Aix-en-Provence</span>
     <h1>Des fleurs qui <em>racontent</em></h1>
-    <p class="hero-desc">Bouquets sur mesure, compositions éphémères et plantes vertes choisies avec soin. Au cœur du Cours Mirabeau depuis 2012.</p>
+    <p class="hero-desc">Bouquets sur mesure, compositions ephemeres et plantes vertes choisies avec soin. Au coeur du Cours Mirabeau depuis 2012.</p>
     <a href="tel:0442123456" class="hero-cta">Commander un bouquet</a>
   </div>
   <div class="hero-visual">
-    <img src="fleurs.jpg" alt="Composition florale colorée" class="hero-visual-inner" style="width:100%;height:100%;object-fit:cover;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;">
+    <div class="hero-visual-bg"></div>
+    <div class="hero-visual-img"><img src="fleurs.jpg" alt="Composition florale coloree"></div>
   </div>
 </header>
 
 <main>
 <section class="section" id="creations">
-  <span class="section-tag">Nos créations</span>
+  <span class="section-tag">Nos creations</span>
   <h2 class="section-title">Ce que nous faisons</h2>
   <div class="creations">
     <article class="creation">
-      <img src="fleurs.jpg" alt="" class="creation-icon" style="width:100%;height:100%;object-fit:cover;border-radius:16px;">
+      <div class="creation-icon" aria-hidden="true"></div>
       <h3>Bouquet Saisonnier</h3>
-      <p>Fleurs du marché d'Aix, choisies le matin même. Tons pastels ou vitaminés selon l'humeur du jour.</p>
+      <p>Fleurs du marche d'Aix, choisies le matin meme. Tons pastels ou vitamines selon l'humeur du jour.</p>
     </article>
     <article class="creation">
-      <div class="creation-icon" aria-hidden="true" style="background:linear-gradient(135deg,#6B8E6E,#8FB396);"></div>
-      <h3>Rose Éternelle</h3>
-      <p>Roses stabilisées sous cloche de verre. Un message d'amour qui dure des années.</p>
+      <div class="creation-icon" aria-hidden="true"></div>
+      <h3>Rose Eternelle</h3>
+      <p>Roses stabilisees sous cloche de verre. Un message d'amour qui dure des annees.</p>
     </article>
-    <article class="creation">
-      <div class="creation-icon" aria-hidden="true" style="background:linear-gradient(135deg,#6B8E6E,#8FB396);"></div>
+    <article class="creation creation-wide">
+      <div class="creation-icon" aria-hidden="true"></div>
       <h3>Livraison sur Aix &amp; les alentours</h3>
-      <p>Commandez avant 14h pour une livraison le jour même à Aix-en-Provence, Puyricard, Les Milles et Montperrin. Chaque bouquet est préparé à la main avec attention.</p>
+      <p>Commandez avant 14h pour une livraison le jour meme a Aix-en-Provence, Puyricard, Les Milles et Montperrin. Chaque bouquet est prepare a la main avec attention.</p>
     </article>
     <article class="creation">
-      <div class="creation-icon" aria-hidden="true" style="background:linear-gradient(135deg,#6B8E6E,#8FB396);"></div>
-      <h3>Boutonnière &amp; Corsage</h3>
-      <p>Mariages et cérémonies. Fleurs fraîches ou séchées, style champêtre ou élégant.</p>
+      <div class="creation-icon" aria-hidden="true"></div>
+      <h3>Boutonniere &amp; Corsage</h3>
+      <p>Mariages et ceremonies. Fleurs fraiches ou sechees, style champetre ou elegant.</p>
     </article>
   </div>
 </section>
@@ -140,12 +126,12 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
     <div class="occasions">
       <span class="occasion">Anniversaire</span>
       <span class="occasion">Saint-Valentin</span>
-      <span class="occasion">Fête des mères</span>
+      <span class="occasion">Fete des meres</span>
       <span class="occasion">Mariage</span>
       <span class="occasion">Deuil</span>
       <span class="occasion">Naissance</span>
       <span class="occasion">Remerciement</span>
-      <span class="occasion">Déménagement</span>
+      <span class="occasion">Demenagement</span>
     </div>
   </div>
 </section>
@@ -154,14 +140,17 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
   <span class="section-tag">Contact</span>
   <h2 class="section-title">Nous trouver</h2>
   <p><strong>Fleurs du Cours</strong><br>21 Cours Mirabeau<br>13100 Aix-en-Provence</p>
-  <p><a href="tel:0442123456">04 42 12 34 56</a> · <a href="mailto:fleursducours@gmail.com">fleursducours@gmail.com</a></p>
-  <p style="font-size:.9rem;opacity:.6;margin-top:1.5rem">Lun–Sam : 9h – 19h30 · Dim : 9h – 13h</p><div style="margin-top:2rem;border-radius:24px;overflow:hidden;height:250px;box-shadow:0 4px 20px rgba(0,0,0,.08);"><iframe src="https://maps.google.com/maps?q=21+Cours+Mirabeau,+13100+Aix-en-Provence,+France&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte Fleurs du Cours"></iframe></div>
+  <p><a href="tel:0442123456">04 42 12 34 56</a> &middot; <a href="mailto:fleursducours@gmail.com">fleursducours@gmail.com</a></p>
+  <p style="font-size:.85rem;opacity:.6;margin-top:1rem">Lun-Sam : 9h - 19h30 &middot; Dim : 9h - 13h</p>
+  <div class="contact-map">
+    <iframe src="https://maps.google.com/maps?q=21+Cours+Mirabeau,+13100+Aix-en-Provence,+France&t=&z=16&ie=UTF8&iwloc=&output=embed" title="Carte Fleurs du Cours" loading="lazy"></iframe>
+  </div>
 </section>
 </main>
 
 <footer class="footer">
   <div class="footer-brand">Fleurs du Cours</div>
-  <p>Fleuriste artisanale — 21 Cours Mirabeau — 13100 Aix-en-Provence</p>
+  <p>Fleuriste artisanale - 21 Cours Mirabeau - 13100 Aix-en-Provence</p>
 </footer>
 
 <script type="application/ld+json">
@@ -173,8 +162,9 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
   "telephone":"+33442123456",
   "email":"fleursducours@gmail.com",
   "openingHours":["Mo-Sa 09:00-19:30","Su 09:00-13:00"],
-  "priceRange":"€"
+  "priceRange":"&euro;"
 }
 </script>
+
 </body>
 </html>
